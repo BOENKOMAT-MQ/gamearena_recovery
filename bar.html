@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Game Bar — бар клуба GameArena: энергетики, коктейли, кофе и снеки с доставкой прямо к игровому месту.">
+    <meta name="theme-color" content="#08090a">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2308090a'/%3E%3Crect x='9' y='9' width='14' height='14' fill='none' stroke='%23c6ff2e' stroke-width='2' transform='rotate(45 16 16)'/%3E%3C/svg%3E">
+    <link rel="preload" href="assets/fonts/onest-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Бар — GameArena</title>
+</head>
+
+<body data-page="bar">
+    <main>
+        <section class="page-head page-head--bar">
+            <div class="wrap">
+                <p class="eyebrow reveal">Fuel Station · меню 2026</p>
+                <h1 class="reveal grad-text">Game Bar</h1>
+                <p class="lead reveal">Напитки, коктейли и снеки прямо к твоему месту. Заказ через официанта или на
+                    ресепшене — без отрыва от игры.</p>
+                <div class="hero__actions reveal" style="margin-top:1.4rem">
+                    <a class="btn btn--accent" href="booking.html">Забронировать место</a>
+                    <a class="btn btn--ghost" href="#menu">Смотреть меню</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="menu" style="padding-top:clamp(2rem,4vw,3rem)">
+            <div class="wrap">
+                <div class="menu-tabs reveal" role="tablist" aria-label="Категории меню">
+                    <button type="button" class="menu-tab is-on" data-cat="drinks" role="tab" aria-selected="true">Напитки</button>
+                    <button type="button" class="menu-tab" data-cat="cocktails" role="tab" aria-selected="false">Коктейли</button>
+                    <button type="button" class="menu-tab" data-cat="coffee" role="tab" aria-selected="false">Кофе и чай</button>
+                    <button type="button" class="menu-tab" data-cat="snacks" role="tab" aria-selected="false">Снеки</button>
+                </div>
+
+                <div class="menu-panel" id="menuPanel"></div>
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="wrap">
+                <div class="deal reveal">
+                    <div>
+                        <p class="eyebrow">Комбо</p>
+                        <h2>Рейд-сет</h2>
+                        <p>Энергетик + наггетсы + большой попкорн. Комбо для длинной сессии — приносим к месту за один
+                            заказ.</p>
+                    </div>
+                    <div class="deal__price"><b>599 ₽</b><s>719 ₽</s></div>
+                </div>
+                <div class="feat-grid feat-grid--3">
+                    <article class="feat reveal" style="--d:0s">
+                        <span class="feat__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>
+                        </span>
+                        <h3>Доставка к месту</h3>
+                        <p>Официант приносит заказ прямо за игровой стол.</p>
+                    </article>
+                    <article class="feat reveal" style="--d:.06s">
+                        <span class="feat__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                        </span>
+                        <h3>Happy Hour</h3>
+                        <p>С 16:00 до 19:00 все напитки −20% в будни.</p>
+                    </article>
+                    <article class="feat reveal" style="--d:.12s">
+                        <span class="feat__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+                        </span>
+                        <h3>Оплата</h3>
+                        <p>Карта, наличные или СБП на ресепшене.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-band">
+            <div class="wrap cta-band__inner">
+                <div>
+                    <h2>Голоден? Не прерывай фарм</h2>
+                    <p>Забронируй место, закажи сет — остальное привезём сами.</p>
+                </div>
+                <a class="btn btn--accent btn--lg" href="booking.html">Забронировать место</a>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/main.js" defer></script>
+</body>
+
+</html>
