@@ -1,11 +1,235 @@
-<!DOCTYPE html><html lang="ru" data-bs-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700;800&display=swap" rel="stylesheet"><link href="css/style.css" rel="stylesheet"><title>GameArena — киберспортивный клуб</title></head><body data-page="home"><main>
-<section class="hero"><div class="container hero__inner"><div><h1 class="hero__title">Твоё место в GameArena уже ждёт</h1><p class="hero__text">Мощные ПК, VIP-комнаты и консоли. Выбери место и забронируй время за минуту.</p><div class="hero__actions"><a class="btn btn-primary btn-lg" href="catalog.html">Забронировать место</a><a class="btn btn-outline-light btn-lg" href="#about">О клубе</a></div></div>
-<div class="seatmap" id="seatmap" aria-label="Схема зала: свободные и занятые места"></div></div></section>
-<section class="section" id="about"><div class="container"><h2 class="section__title">О клубе</h2><p class="section__lead">GameArena — клуб для тех, кто играет всерьёз и для удовольствия. Свежее железо, тишина в VIP, бар рядом и турниры каждые выходные.</p>
-<div class="features"><div class="features__item"><h3 class="features__title">Мощные ПК</h3><p class="features__text">RTX 4060–4080, мониторы до 240 Гц</p></div><div class="features__item"><h3 class="features__title">VIP-зоны</h3><p class="features__text">Закрытые комнаты для компании</p></div><div class="features__item"><h3 class="features__title">Бар</h3><p class="features__text">Напитки и закуски прямо к месту</p></div><div class="features__item"><h3 class="features__title">Турниры</h3><p class="features__text">CS2, Dota 2, Valorant, FC 25</p></div><div class="features__item"><h3 class="features__title">Обучение</h3><p class="features__text">Тренировки с киберспортсменами</p></div></div></div></section>
-<section class="section section--alt" id="popular"><div class="container"><h2 class="section__title">Популярные места</h2><div class="row g-4" id="list"></div><a class="btn btn-outline-info mt-4" href="catalog.html">Весь каталог</a></div></section>
-<section class="section" id="halls"><div class="container"><h2 class="section__title">Залы</h2><div class="row g-3"><div class="col-md-4"><div class="hall"><h3>Arena</h3><p>Основной зал на 40 ПК. Для игры в одиночку и с друзьями.</p></div></div><div class="col-md-4"><div class="hall"><h3>Pro</h3><p>Bootcamp и стримерская для команд и контент-мейкеров.</p></div></div><div class="col-md-4"><div class="hall"><h3>Lounge</h3><p>VIP-комнаты и консольная зона с диванами и большими ТВ.</p></div></div></div></div></section>
-<section class="section section--alt" id="events"><div class="container"><div class="row g-4"><div class="col-lg-6"><h2 class="section__title">Ближайшие турниры</h2><div class="event"><b>CS2 Open Cup</b><span>8 ноября · взнос 500 ₽</span></div><div class="event"><b>Valorant 5×5</b><span>15 ноября · призовой 30 000 ₽</span></div><div class="event"><b>FC 25 на PS5</b><span>22 ноября · вход свободный</span></div></div>
-<div class="col-lg-6"><h2 class="section__title">Акции</h2><div class="event"><b>Ночной тариф</b><span>с 00:00 до 08:00 — скидка 30%</span></div><div class="event"><b>Приведи друга</b><span>3 часа в подарок вам обоим</span></div><div class="event"><b>Студентам</b><span>−15% по будням до 16:00</span></div></div></div></div></section>
-<section class="section"><div class="container"><div class="stats"><div class="stats__item"><b class="stats__num">60</b><span>игровых мест</span></div><div class="stats__item"><b class="stats__num">3 500</b><span>игроков в клубе</span></div><div class="stats__item"><b class="stats__num">24</b><span>турнира в год</span></div></div></div></section></main>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="js/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Ищете в коде что-то интересное? Тут только вёрстка и немного лайма. -->
+    <!-- Пароль от админки: не существует. Пароль от вайфая: спросите у бармена. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="GameArena — киберспортивный клуб в Москве: 60 игровых мест, VIP-комнаты, bootcamp, стримерская, бар и турниры каждые выходные.">
+    <meta name="theme-color" content="#08090a">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2308090a'/%3E%3Crect x='9' y='9' width='14' height='14' fill='none' stroke='%23c6ff2e' stroke-width='2' transform='rotate(45 16 16)'/%3E%3C/svg%3E">
+    <link rel="preload" href="assets/fonts/onest-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/unbounded-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>GameArena — киберспортивный клуб в Москве</title>
+</head>
+
+<body data-page="home">
+    <main>
+        <section class="hero">
+            <div class="hero__bg" aria-hidden="true">
+                <div class="hero__grid"></div>
+                <div class="hero__glow hero__glow--1"></div>
+                <div class="hero__glow hero__glow--2"></div>
+            </div>
+            <div class="wrap">
+                <div class="hero__grid-cols">
+                    <div class="hero__copy">
+                        <p class="hero__badge fade-up"><i></i>Открыто сейчас · 24/7 на выходных</p>
+                        <h1 class="hero__title fade-up" style="--d:.06s">Твоё место в<br><em class="grad-text">GameArena</em></h1>
+                        <p class="hero__text fade-up" style="--d:.12s">60 игровых мест, VIP-комнаты, bootcamp и стримерская.
+                            Мощное железо, честные цены и бар прямо к столу.</p>
+                        <div class="hero__actions fade-up" style="--d:.18s">
+                            <a class="btn btn--accent btn--lg" href="booking.html">Забронировать</a>
+                            <a class="btn btn--ghost btn--lg" href="catalog.html">Каталог мест</a>
+                        </div>
+                        <p class="hero__note fade-up" style="--d:.24s"><i>◉</i> Оплата картой, наличными или СБП · отмена за 2 часа бесплатно</p>
+                    </div>
+
+                    <div class="hud fade-up" style="--d:.14s">
+                        <i class="hud__c hud__c--tl"></i><i class="hud__c hud__c--tr"></i>
+                        <i class="hud__c hud__c--bl"></i><i class="hud__c hud__c--br"></i>
+                        <div class="hud__bar"><span>Зал A · схема</span><span class="hud__live">live</span></div>
+                        <div class="hud__body">
+                            <div class="seatmap" id="seatmap" role="group" aria-label="Схема зала: свободные и занятые места"></div>
+                            <div class="hud__legend">
+                                <span><i class="hud__dot hud__dot--free"></i>свободно</span>
+                                <span><i class="hud__dot"></i>занято</span>
+                                <span><i class="hud__dot"></i>24 места</span>
+                            </div>
+                            <p class="hud__hint">// клик по месту отмечает его на схеме</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats fade-up" style="--d:.3s">
+                    <div class="stat"><b data-count="60">60</b><span>игровых мест</span></div>
+                    <div class="stat"><b data-count="240" data-suffix="Гц">240 Гц</b><span>мониторы</span></div>
+                    <div class="stat"><b>24/7</b><span>выходные</span></div>
+                    <div class="stat"><b data-count="4" data-pad="2">04</b><span>турнира в месяц</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="wrap">
+                <div class="section__head">
+                    <div>
+                        <p class="eyebrow reveal">Что внутри</p>
+                        <h2 class="reveal">О клубе</h2>
+                        <p class="reveal">Мы сделали место, куда хочется вернуться: железо не отстаёт от игр, а
+                            атмосфера — от настроения.</p>
+                    </div>
+                    <a class="btn btn--ghost btn--sm reveal" href="about.html">О нас →</a>
+                </div>
+                <div class="feat-grid">
+                    <article class="feat reveal" style="--d:0s">
+                        <span class="feat__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="13" rx="1.5"/><path d="M8 21h8M12 17v4"/></svg>
+                        </span>
+                        <h3>Мощные ПК</h3>
+                        <p>RTX 4060–4080, мониторы до 240 Гц, механика и игровые мыши.</p>
+                    </article>
+                    <article class="feat reveal" style="--d:.06s">
+                        <span class="feat__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 4 6v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+                        </span>
+                        <h3>VIP-зоны</h3>
+                        <p>Закрытые комнаты с диванами и кондиционером под компанию.</p>
+                    </article>
+                    <article class="feat reveal" style="--d:.12s">
+                        <span class="feat__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2h12l-2 8H8L6 2Z"/><path d="M8 10v4a4 4 0 0 0 8 0v-4"/><path d="M12 18v4"/></svg>
+                        </span>
+                        <h3>Бар</h3>
+                        <p>Напитки и закуски приносим прямо к игровому месту.</p>
+                    </article>
+                    <article class="feat reveal" style="--d:.18s">
+                        <span class="feat__ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 3h10v6a5 5 0 0 1-10 0V3Z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/><path d="M12 14v5M8 21h8"/></svg>
+                        </span>
+                        <h3>Турниры</h3>
+                        <p>CS2, Dota 2, Valorant и FC 26 — каждые выходные.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt" id="popular">
+            <div class="wrap">
+                <div class="section__head">
+                    <div>
+                        <p class="eyebrow reveal">Выбор гостей</p>
+                        <h2 class="reveal">Популярные места</h2>
+                        <p class="reveal">Три зоны, которые бронируют чаще всего.</p>
+                    </div>
+                    <a class="btn btn--ghost btn--sm reveal" href="catalog.html">Весь каталог →</a>
+                </div>
+                <div class="cards" id="places"></div>
+            </div>
+        </section>
+
+        <section class="section" id="halls">
+            <div class="wrap">
+                <div class="section__head">
+                    <div>
+                        <p class="eyebrow reveal">Планировка</p>
+                        <h2 class="reveal">Три зала</h2>
+                    </div>
+                </div>
+                <div class="hall-grid">
+                    <a class="hall-card reveal" href="catalog.html" style="--d:0s">
+                        <span class="hall-card__code">Hall 01 · 40 ПК</span>
+                        <h3>Arena</h3>
+                        <p>Основной зал для игры в одиночку и с друзьями. Самое доступное железо клуба.</p>
+                        <span class="hall-card__go">смотреть места <i>→</i></span>
+                    </a>
+                    <a class="hall-card reveal" href="catalog.html" style="--d:.08s">
+                        <span class="hall-card__code">Hall 02 · Bootcamp</span>
+                        <h3>Pro</h3>
+                        <p>Bootcamp на пять мест и звукоизолированная стримерская для команд.</p>
+                        <span class="hall-card__go">смотреть места <i>→</i></span>
+                    </a>
+                    <a class="hall-card reveal" href="catalog.html" style="--d:.16s">
+                        <span class="hall-card__code">Hall 03 · VIP &amp; Console</span>
+                        <h3>Lounge</h3>
+                        <p>VIP-комнаты и консольная зона с диванами и большими ТВ.</p>
+                        <span class="hall-card__go">смотреть места <i>→</i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt" id="schedule">
+            <div class="wrap">
+                <div class="cols">
+                    <div>
+                        <div class="section__head">
+                            <div>
+                                <p class="eyebrow reveal">Расписание</p>
+                                <h2 class="reveal">Ближайшие турниры</h2>
+                            </div>
+                        </div>
+                        <div class="stack reveal" id="events"></div>
+                    </div>
+                    <div>
+                        <div class="section__head">
+                            <div>
+                                <p class="eyebrow reveal">Выгодно</p>
+                                <h2 class="reveal">Акции</h2>
+                            </div>
+                        </div>
+                        <div class="stack reveal" id="promos"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="reviews">
+            <div class="wrap">
+                <div class="section__head">
+                    <div>
+                        <p class="eyebrow reveal">Без накруток</p>
+                        <h2 class="reveal">Отзывы</h2>
+                        <p class="reveal">Только живые отзывы гостей. Раздел пока пуст — ваш может стать первым.</p>
+                    </div>
+                </div>
+                <div class="cols">
+                    <div class="panel panel--empty reveal">
+                        <div class="panel__stars" aria-hidden="true">☆☆☆☆☆</div>
+                        <h3>Отзывов пока нет</h3>
+                        <p>Сыграйте партию, оцените железо и атмосферу — после проверки опубликуем ваш отзыв.</p>
+                    </div>
+                    <form class="panel reveal" id="review" data-validate novalidate style="--d:.08s">
+                        <h3>Оставить отзыв</h3>
+                        <div class="field">
+                            <label class="label" for="r-name">Имя</label>
+                            <input class="input" id="r-name" required autocomplete="name">
+                        </div>
+                        <div class="field">
+                            <span class="label" id="r-rate-label">Оценка</span>
+                            <input type="hidden" id="r-rate" name="rate" required>
+                            <div class="rate" role="radiogroup" aria-labelledby="r-rate-label">
+                                <button type="button" class="rate__star" data-v="1" role="radio" aria-checked="false" aria-label="1 звезда">★</button>
+                                <button type="button" class="rate__star" data-v="2" role="radio" aria-checked="false" aria-label="2 звезды">★</button>
+                                <button type="button" class="rate__star" data-v="3" role="radio" aria-checked="false" aria-label="3 звезды">★</button>
+                                <button type="button" class="rate__star" data-v="4" role="radio" aria-checked="false" aria-label="4 звезды">★</button>
+                                <button type="button" class="rate__star" data-v="5" role="radio" aria-checked="false" aria-label="5 звёзд">★</button>
+                            </div>
+                            <div class="err">Выберите оценку — от 1 до 5 звёзд</div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="r-text">Отзыв</label>
+                            <textarea class="textarea" id="r-text" rows="4" required></textarea>
+                        </div>
+                        <button class="btn btn--accent btn--block">Отправить отзыв</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-band">
+            <div class="wrap cta-band__inner">
+                <div>
+                    <h2>Свободные места ещё есть</h2>
+                    <p>Забронируйте за минуту — и приходите играть.</p>
+                </div>
+                <a class="btn btn--accent btn--lg" href="booking.html">Выбрать место</a>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/main.js" defer></script>
+</body>
+
+</html>
