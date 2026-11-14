@@ -2683,8 +2683,8 @@ input[type="time"] {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 46px;
-    height: 46px;
+    width: 92px;
+    height: 92px;
     margin-bottom: .95rem;
     border: 1px solid var(--line-2);
     border-radius: 10px;
@@ -2694,8 +2694,8 @@ input[type="time"] {
 }
 
 .dish-card__ico svg {
-    width: 23px;
-    height: 23px;
+    width: 46px;
+    height: 46px;
 }
 
 .dish-card:hover .dish-card__ico {
